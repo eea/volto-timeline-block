@@ -20,6 +20,12 @@ const timelineSchema = {
     },
     icon: {
       title: 'Icon',
+      description: (
+        <>
+          Check <a href="https://react.semantic-ui.com/elements/icon/">here</a>{' '}
+          for a list with all the icons
+        </>
+      ),
     },
     color: {
       title: 'Color',
