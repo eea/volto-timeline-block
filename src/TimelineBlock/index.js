@@ -7,7 +7,7 @@ export default (config) => {
     id: 'timeline_block',
     title: 'Timeline block',
     icon: worldSVG,
-    group: 'text',
+    group: 'common',
     view: TimelineBlockView,
     edit: TimelineBlockEdit,
     restricted: false,
