@@ -19,7 +19,7 @@
 
 ## Features
 
-Demo GIF
+![Timeline Block](https://github.com/eea/volto-timeline-block/raw/develop/docs/timeline-block.png)
 
 ## Getting started
 
