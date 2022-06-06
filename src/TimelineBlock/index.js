@@ -5,7 +5,7 @@ import TimelineBlockView from './View';
 export default (config) => {
   config.blocks.blocksConfig.timeline_block = {
     id: 'timeline_block',
-    title: 'Timeline block',
+    title: 'Timeline',
     icon: worldSVG,
     group: 'common',
     view: TimelineBlockView,
