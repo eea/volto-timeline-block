@@ -1,12 +1,12 @@
-import worldSVG from '@plone/volto/icons/world.svg';
+import iconSVG from '@plone/volto/icons/calendar.svg';
 import TimelineBlockEdit from './Edit';
 import TimelineBlockView from './View';
 
 export default (config) => {
   config.blocks.blocksConfig.timeline_block = {
     id: 'timeline_block',
-    title: 'Timeline block',
-    icon: worldSVG,
+    title: 'Timeline',
+    icon: iconSVG,
     group: 'common',
     view: TimelineBlockView,
     edit: TimelineBlockEdit,
