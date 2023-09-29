@@ -22,34 +22,24 @@
 ![Timeline Block](https://github.com/eea/volto-timeline-block/raw/develop/docs/timeline-block.png)
 ![Timeline Block Demo](https://github.com/eea/volto-timeline-block/raw/docs/docs/volto-timeline.gif)
 
-
 ## Getting started
 
 ### Try volto-timeline-block with Docker
 
-1. Get the latest Docker images
+      git clone https://github.com/eea/volto-timeline-block.git
+      cd volto-timeline-block
+      make
+      make start
 
-   ```
-   docker pull plone
-   docker pull plone/volto
-   ```
-
-1. Start Plone backend
-   ```
-   docker run -d --name plone -p 8080:8080 -e SITE=Plone -e PROFILES="profile-plone.restapi:blocks" plone
-   ```
-
-1. Start Volto frontend
-
-   ```
-   docker run -it --rm -p 3000:3000 --link plone -e ADDONS="@eeacms/volto-timeline-block" plone/volto
-   ```
-
-1. Go to http://localhost:3000
+Go to http://localhost:3000
 
 ### Add volto-timeline-block to your Volto project
 
 1. Make sure you have a [Plone backend](https://plone.org/download) up-and-running at http://localhost:8080/Plone
+
+   ```Bash
+   docker compose up backend
+   ```
 
 1. Start Volto frontend
 
@@ -61,7 +51,7 @@
    ],
 
    "dependencies": {
-       "@eeacms/volto-timeline-block": "^1.0.0"
+       "@eeacms/volto-timeline-block": "*"
    }
    ```
 
@@ -69,7 +59,7 @@
 
    ```
    npm install -g yo @plone/generator-volto
-   yo @plone/volto my-volto-project --addon @eeacms/volto-timeline-block
+   yo @plone/volto my-volto-project --canary --addon @eeacms/volto-timeline-block
    cd my-volto-project
    ```
 
@@ -102,4 +92,3 @@ See [LICENSE.md](https://github.com/eea/volto-timeline-block/blob/master/LICENSE
 ## Funding
 
 [European Environment Agency (EU)](http://eea.europa.eu)
-
