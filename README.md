@@ -19,8 +19,8 @@
 
 ## Features
 
-![Timeline Block](https://github.com/eea/volto-timeline-block/raw/master/docs/timeline-block.png)
-![Timeline Block Demo](https://github.com/eea/volto-timeline-block/raw/master/docs/volto-timeline.gif)
+![Timeline Block](https://raw.githubusercontent.com/eea/volto-timeline-block/master/docs/timeline-block.png)
+![Timeline Block Demo](https://raw.githubusercontent.com/eea/volto-timeline-block/master/docs/volto-timeline.gif)
 
 ## Getting started
 
