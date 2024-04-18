@@ -2,8 +2,7 @@ import iconSVG from '@plone/volto/icons/calendar.svg';
 import TimelineBlockEdit from './Edit';
 import TimelineBlockView from './View';
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default (config) => {
+const config = (config) => {
   config.blocks.blocksConfig.timeline_block = {
     id: 'timeline_block',
     title: 'Timeline',
@@ -21,3 +20,5 @@ export default (config) => {
   };
   return config;
 };
+
+export default config;

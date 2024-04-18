@@ -50,8 +50,7 @@ const timelineSchema = {
   required: [],
 };
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {
+const schema = {
   title: 'Timeline block',
 
   fieldsets: [
@@ -80,3 +79,5 @@ export default {
 
   required: [],
 };
+
+export default schema;
