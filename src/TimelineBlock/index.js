@@ -2,7 +2,7 @@ import iconSVG from '@plone/volto/icons/calendar.svg';
 import TimelineBlockEdit from './Edit';
 import TimelineBlockView from './View';
 
-export default (config) => {
+const applyConfig = (config) => {
   config.blocks.blocksConfig.timeline_block = {
     id: 'timeline_block',
     title: 'Timeline',
@@ -20,3 +20,5 @@ export default (config) => {
   };
   return config;
 };
+
+export default applyConfig;

@@ -6,10 +6,6 @@ describe('ControlPanel: Dexterity Content-Types Layout', () => {
 
   it('Edit Blocks Layout for Book', () => {
     cy.visit('/controlpanel/dexterity-types');
-    cy.waitForResourceToLoad('@navigation');
-    cy.waitForResourceToLoad('@breadcrumbs');
-    cy.waitForResourceToLoad('@actions');
-    cy.waitForResourceToLoad('@types');
 
     cy.get('a[href="/controlpanel/dexterity-types/book"]').should(
       'have.text',
@@ -40,10 +36,6 @@ describe('ControlPanel: Dexterity Content-Types Layout', () => {
     cy.get('#toolbar-save').click();
 
     cy.visit('/cypress');
-    cy.waitForResourceToLoad('@navigation');
-    cy.waitForResourceToLoad('@breadcrumbs');
-    cy.waitForResourceToLoad('@actions');
-    cy.waitForResourceToLoad('@types');
 
     cy.get('button[class="add"]').click();
     cy.get('#toolbar-add-book').click();
@@ -54,17 +46,17 @@ describe('ControlPanel: Dexterity Content-Types Layout', () => {
     cy.getSlateTitle().type('My First Book');
     cy.get('.documentFirstHeading').contains('My First Book');
 
-     // Add timeline item
-     cy.get('.block.timeline_block div[role="presentation"]').click();
-     cy.get('.button').contains('Add Timeline item').click();
-     cy.get('.DateInput.DateInput_1 input[name="datetime-0-items-0-date"]').type(
-       '08/30/2023',
-     );
-     cy.get('input#field-title-1-items-0').type('My Title');
-     cy.get('input#field-description-2-items-0').type('My Description');
-     cy.get('label[for="field-hideTime"]').click();
+    // Add timeline item
+    cy.get('.block.timeline_block div[role="presentation"]').click();
+    cy.get('.button').contains('Add Timeline item').click();
+    cy.get('.DateInput.DateInput_1 input[name="datetime-0-items-0-date"]').type(
+      '08/30/2023',
+    );
+    cy.get('input#field-title-1-items-0').type('My Title');
+    cy.get('input#field-description-2-items-0').type('My Description');
+    cy.get('label[for="field-hideTime"]').click();
 
-     // Add another timeline item
+    // Add another timeline item
     cy.get('.button').contains('Add Timeline item').click();
     cy.get('.DateInput.DateInput_1 input[name="datetime-0-items-1-date"]').type(
       '08/31/2023',

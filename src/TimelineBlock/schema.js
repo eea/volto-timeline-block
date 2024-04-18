@@ -50,7 +50,7 @@ const timelineSchema = {
   required: [],
 };
 
-export default {
+const schema = {
   title: 'Timeline block',
 
   fieldsets: [
@@ -79,3 +79,5 @@ export default {
 
   required: [],
 };
+
+export default schema;
