@@ -1,6 +1,14 @@
 import iconSVG from '@plone/volto/icons/calendar.svg';
 import TimelineBlockEdit from './Edit';
 import TimelineBlockView from './View';
+import { defineMessages } from 'react-intl';
+
+defineMessages({
+  timeline: {
+    id: 'Timeline',
+    defaultMessage: 'Timeline',
+  },
+});
 
 const applyConfig = (config) => {
   config.blocks.blocksConfig.timeline_block = {

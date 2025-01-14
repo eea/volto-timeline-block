@@ -5,8 +5,14 @@ import View from './View';
 import schema from './schema';
 
 const Edit = (props) => {
-  const { data = {}, block = null, selected = false, onChangeBlock, intl } = props;
-  const blockSchema = schema(intl)
+  const {
+    data = {},
+    block = null,
+    selected = false,
+    onChangeBlock,
+    intl,
+  } = props;
+  const blockSchema = schema(intl);
 
   return (
     <>
