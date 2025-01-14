@@ -11,9 +11,14 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
-#. Default: "Add Timeline Items"
+#. Default: "Add Timeline items"
 #: TimelineBlock/View
-msgid "Add Timeline Items"
+msgid "Add Timeline items"
+msgstr ""
+
+#. Default: "Timeline"
+#: TimelineBlock/index
+msgid "Timeline"
 msgstr ""
 
 #. Default: "Date and time"
