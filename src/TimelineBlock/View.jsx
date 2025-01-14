@@ -7,10 +7,10 @@ import { defineMessages, useIntl } from 'react-intl';
 
 const messages = defineMessages({
   addTimelineItem: {
-    id: 'Add Timeline Items',
-    defaultMessage: 'Add Timeline Items',
-  }
-})
+    id: 'Add Timeline items',
+    defaultMessage: 'Add Timeline items',
+  },
+});
 
 function Timeline({ children, reversed }) {
   return (
@@ -53,10 +53,11 @@ Timeline.Icon = (args) => (
 );
 
 const View = ({ data, mode, moment }) => {
-  const intl = useIntl()
+  const intl = useIntl();
   const { items = [], reversed, hideTime } = data;
 
-  if (!items.length && mode === 'edit') return <p>{intl.formatMessage(messages.addTimelineItem)}</p>;
+  if (!items.length && mode === 'edit')
+    return <p>{intl.formatMessage(messages.addTimelineItem)}</p>;
   return (
     <React.Fragment>
       {items.map((item, index) => {

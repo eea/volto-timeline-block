@@ -4,6 +4,7 @@ import { unmountComponentAtNode } from 'react-dom';
 import View from './View';
 import moment from 'moment';
 import '@testing-library/jest-dom/extend-expect';
+import { IntlProvider } from 'react-intl';
 
 jest.mock('@plone/volto/helpers/Loadable/Loadable', () => ({
   injectLazyLibs: () => (component) => component,
@@ -30,7 +31,7 @@ describe('View and Timeline components', () => {
   });
 
   it('should render empty timeline in edit mode', () => {
-    render(<View data={{ items: undefined }} mode="edit" />, container);
+    renderWithIntl(<View data={{ items: undefined }} mode="edit" />, container);
 
     expect(screen.getByText('Add Timeline items')).toBeInTheDocument();
   });
@@ -45,7 +46,7 @@ describe('View and Timeline components', () => {
     };
     const data = { items: [item], reversed: false };
 
-    const { getByText } = render(
+    const { getByText } = renderWithIntl(
       <View data={data} mode="view" moment={moment} />,
       container,
     );
@@ -65,7 +66,7 @@ describe('View and Timeline components', () => {
     };
     const data = { items: [item], reversed: true, hideTime: true };
 
-    const { getByText } = render(
+    const { getByText } = renderWithIntl(
       <View data={data} mode="view" moment={moment} />,
       container,
     );
@@ -75,3 +76,11 @@ describe('View and Timeline components', () => {
     expect(getByText('Jan 1, 2023')).toBeInTheDocument();
   });
 });
+
+const renderWithIntl = (ui, { locale = 'en', messages = {} } = {}) => {
+  return render(
+    <IntlProvider locale={locale} messages={messages}>
+      {ui}
+    </IntlProvider>,
+  );
+};
