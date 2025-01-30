@@ -11,4 +11,132 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+#. Default: "Add Timeline items"
+#: TimelineBlock/View
+msgid "Add Timeline items"
+msgstr ""
 
+#. Default: "Timeline"
+#: TimelineBlock/index
+msgid "Timeline"
+msgstr ""
+
+#. Default: "Date and time"
+#: TimelineBlock/schema
+msgid "dateAndTime"
+msgstr ""
+
+#. Default: "Hide time"
+#: TimelineBlock/schema
+msgid "hideTime"
+msgstr ""
+
+#. Default: "Icon"
+#: TimelineBlock/schema
+msgid "icon"
+msgstr ""
+
+#. Default: "Check here for a list with all the icons"
+#: TimelineBlock/schema
+msgid "iconDescription"
+msgstr ""
+
+#. Default: "Reversed"
+#: TimelineBlock/schema
+msgid "reversedTitle"
+msgstr ""
+
+#. Default: "Timeline block"
+#: TimelineBlock/schema
+msgid "timelineBlock"
+msgstr ""
+
+#. Default: "Color"
+#: TimelineBlock/schema
+msgid "timelineColor"
+msgstr ""
+
+#. Default: "Timeline item"
+#: TimelineBlock/schema
+msgid "timelineItem"
+msgstr ""
+
+#. Default: "Black"
+#: TimelineBlock/schema
+msgid "timelineItem.color.black"
+msgstr ""
+
+#. Default: "Blue"
+#: TimelineBlock/schema
+msgid "timelineItem.color.blue"
+msgstr ""
+
+#. Default: "Brown"
+#: TimelineBlock/schema
+msgid "timelineItem.color.brown"
+msgstr ""
+
+#. Default: "Green"
+#: TimelineBlock/schema
+msgid "timelineItem.color.green"
+msgstr ""
+
+#. Default: "Grey"
+#: TimelineBlock/schema
+msgid "timelineItem.color.grey"
+msgstr ""
+
+#. Default: "Olive"
+#: TimelineBlock/schema
+msgid "timelineItem.color.olive"
+msgstr ""
+
+#. Default: "Orange"
+#: TimelineBlock/schema
+msgid "timelineItem.color.orange"
+msgstr ""
+
+#. Default: "Pink"
+#: TimelineBlock/schema
+msgid "timelineItem.color.pink"
+msgstr ""
+
+#. Default: "Purple"
+#: TimelineBlock/schema
+msgid "timelineItem.color.purple"
+msgstr ""
+
+#. Default: "Red"
+#: TimelineBlock/schema
+msgid "timelineItem.color.red"
+msgstr ""
+
+#. Default: "Teal"
+#: TimelineBlock/schema
+msgid "timelineItem.color.teal"
+msgstr ""
+
+#. Default: "Violet"
+#: TimelineBlock/schema
+msgid "timelineItem.color.violet"
+msgstr ""
+
+#. Default: "Yellow"
+#: TimelineBlock/schema
+msgid "timelineItem.color.yellow"
+msgstr ""
+
+#. Default: "Description"
+#: TimelineBlock/schema
+msgid "timelineItemDescription"
+msgstr ""
+
+#. Default: "Timeline items"
+#: TimelineBlock/schema
+msgid "timelineItems"
+msgstr ""
+
+#. Default: "Title"
+#: TimelineBlock/schema
+msgid "title"
+msgstr ""

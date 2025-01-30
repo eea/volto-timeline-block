@@ -3,6 +3,15 @@ import { compose } from 'redux';
 import cx from 'classnames';
 import { Grid, Card, Label, Icon } from 'semantic-ui-react';
 import { injectLazyLibs } from '@plone/volto/helpers/Loadable/Loadable';
+import { defineMessages, useIntl } from 'react-intl';
+
+const messages = defineMessages({
+  addTimelineItem: {
+    id: 'Add Timeline items',
+    defaultMessage: 'Add Timeline items',
+  },
+});
+
 function Timeline({ children, reversed }) {
   return (
     <div className="eea timeline">
@@ -44,9 +53,11 @@ Timeline.Icon = (args) => (
 );
 
 const View = ({ data, mode, moment }) => {
+  const intl = useIntl();
   const { items = [], reversed, hideTime } = data;
 
-  if (!items.length && mode === 'edit') return <p>Add Timeline items</p>;
+  if (!items.length && mode === 'edit')
+    return <p>{intl.formatMessage(messages.addTimelineItem)}</p>;
   return (
     <React.Fragment>
       {items.map((item, index) => {
