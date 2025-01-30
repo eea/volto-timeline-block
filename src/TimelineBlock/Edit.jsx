@@ -5,7 +5,14 @@ import View from './View';
 import schema from './schema';
 
 const Edit = (props) => {
-  const { data = {}, block = null, selected = false, onChangeBlock } = props;
+  const {
+    data = {},
+    block = null,
+    selected = false,
+    onChangeBlock,
+    intl,
+  } = props;
+  const blockSchema = schema(intl);
 
   return (
     <>
@@ -13,8 +20,8 @@ const Edit = (props) => {
 
       <SidebarPortal selected={selected}>
         <InlineForm
-          schema={schema}
-          title={schema.title}
+          schema={blockSchema}
+          title={blockSchema.title}
           onChangeField={(id, value) => {
             onChangeBlock(block, {
               ...data,
