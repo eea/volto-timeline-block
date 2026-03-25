@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import { unmountComponentAtNode } from 'react-dom';
 import View from './View';
 import moment from 'moment';
-import '@testing-library/jest-dom/extend-expect';
+import '@testing-library/jest-dom';
 import { IntlProvider } from 'react-intl';
 
 jest.mock('@plone/volto/helpers/Loadable/Loadable', () => ({
