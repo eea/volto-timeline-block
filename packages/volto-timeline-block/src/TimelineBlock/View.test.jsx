@@ -1,3 +1,4 @@
+import { vi } from 'vitest';
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { unmountComponentAtNode } from 'react-dom';
@@ -6,12 +7,12 @@ import moment from 'moment';
 import '@testing-library/jest-dom';
 import { IntlProvider } from 'react-intl';
 
-jest.mock('@plone/volto/helpers/Loadable/Loadable', () => ({
+vi.mock('@plone/volto/helpers/Loadable/Loadable', () => ({
   injectLazyLibs: () => (component) => component,
 }));
 
-jest.mock('moment', () => {
-  const moment = jest.requireActual('moment');
+vi.mock('moment', async () => {
+  const moment = await vi.importActual('moment');
 
   return { default: moment };
 });
